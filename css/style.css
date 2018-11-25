@@ -5,6 +5,16 @@
     font-family: roboto, sans-serif;
 }
 
+body {
+    background-image: url(../img/base.jpg);
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 70px 100px;
+
+}
+
 h1 {
     text-align: center;
     margin: 20px 0;
@@ -17,13 +27,16 @@ h3 {
 .panel {
     margin: 20px;
 }
-
+.panel-container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 20px;
+     
+}
 .panel-left,
 .panel-right {
-    display: inline-block;
-    width: 48%;
     overflow: hidden;
-    margin: 40px auto 0;
     text-align: center;
 }
 
@@ -35,14 +48,19 @@ h3 {
     text-align: center;
 }
 
-h1,
+h1 {
+        text-transform: uppercase;
+    }
+    
+
 h3 {
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 20px;
 }
+
 
 .select {
     overflow: hidden;
@@ -61,20 +79,21 @@ h2 {
 
 button {
     display: block;
+    color: white;
     padding: 5px 20px;
-    border: 2px solid black;
+    border: 2px solid grey;
     text-transform: uppercase;
-    background-color: #fff;
+    background-color: rgb(208, 117, 106);
     font-weight: bold;
-    margin: 10px auto;
+    margin: 20px auto;
     transition: .3s;
     font-size: 30px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(20, 20, 20);
-    color: white
+    background-color: rgb(208, 117, 106);
+    color: black
 }
 
 span {

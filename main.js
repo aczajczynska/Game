@@ -13,14 +13,12 @@ const game = {
 
 const hands = [...document.querySelectorAll(".select img")];
 
-
-
 function handSelect() {
 
     game.playerHand = this.dataset.option
     console.log(game.playerHand);
     hands.forEach(hand => hand.style.boxShadow = '');
-    this.style.boxShadow = '0 0 3px 3px green';
+    this.style.boxShadow = '0 0 3px 3px rgb(208, 117, 106)';
 }
 
 function aiChoise(){
